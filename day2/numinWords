@@ -1,0 +1,10 @@
+def numtoWords():
+    x=int(input("enter number:"))
+    d={0:"zero",1:"one",2:"two",3:"Three",4:"Four",5:"five",6:"six",7:"Seven",8:"Eight",9:"nine"}
+    s=""
+    while x>0:
+        r=x%10
+        s=d[r]+" "+s
+        x=x//10
+    return s
+print(numtoWords())
