@@ -1,5 +1,5 @@
 def notescount():
-    amt=int(input("Enter yuor amount:"))
+    amt=int(input("Enter your amount:"))
     notes=0
     notes+=amt//2000
     amt=amt%2000
