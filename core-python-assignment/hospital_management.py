@@ -1,4 +1,4 @@
-def search_patients_by_disease(patients, disease):
+def search_by_disease(patients, disease):
     result = [p["Name"] for p in patients if p["Disease"].lower() == disease.lower()]
     return result
 patients = [
@@ -8,5 +8,5 @@ patients = [
 ]
 
 search_disease = "Flu"
-matched_patients = search_patients_by_disease(patients, search_disease)
+matched_patients = search_by_disease(patients, search_disease)
 print(f"Patients with {search_disease}: {matched_patients}")
